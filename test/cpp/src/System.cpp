@@ -2290,3 +2290,15 @@ void System_register_twice_w_each_run(void) {
     sys2.run();
     test_int(count2, 1);
 }
+
+void System_final_system_writes(void) {
+    flecs::world world;
+    struct A{
+        int x;
+    };
+
+    world.system("Test")
+        .write<A>()
+        .run([](flecs::iter&){});
+    world.progress();
+}

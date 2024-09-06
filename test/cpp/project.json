@@ -508,7 +508,8 @@
                 "register_twice_w_each",
                 "register_twice_w_run",
                 "register_twice_w_run_each",
-                "register_twice_w_each_run"
+                "register_twice_w_each_run",
+                "final_system_writes"
             ]
         }, {
             "id": "Event",
